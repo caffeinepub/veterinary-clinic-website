@@ -1,0 +1,140 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update clinic branding, real content, Birds category, and additional services",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Update homepage hero and About Us section with real treatVET clinic details, stats, address, and emergency service highlights",
+      "acceptanceCriteria": [
+        "Homepage hero displays 'treatVET' as the clinic name and 'Veterinary Care Treatment' as the tagline or subtitle.",
+        "Stat counters/badges show: 24/7, 4+ Experts, 1700+ Animals Treated, 82% Satisfaction, Since 2017.",
+        "About Us / contact section displays the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong.",
+        "A highlighted callout or badge communicates the 24/7 emergency house-visit service.",
+        "Standby veterinary specialist availability is mentioned on the homepage."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Update the hero section to display 'treatVET' as the clinic name with 'Veterinary Care Treatment' as the tagline. Update stat badges/counters to show: 24/7 availability, 4+ Veterinary Experts, 1700+ Animals Treated, 82% Client Satisfaction, and Since 2017. Add or update the About Us section to display the full clinic address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Add a highlighted callout or badge for the 24/7 emergency house-visit service ('In emergency cases, we visit the animal owner's house at any time'). Mention the standby veterinary specialist availability."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Update Footer component with real treatVET clinic contact information including address, 24/7 availability, and emergency house-visit highlight",
+      "acceptanceCriteria": [
+        "Footer shows clinic name 'treatVET' and full address.",
+        "Footer shows 24/7 availability note.",
+        "Footer references emergency house-visit service."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the Footer component to display the clinic name 'treatVET' and the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Add a 24/7 availability note and include a reference or highlight for the emergency house-visit service."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Add 'Birds / Poultry' as a fourth animal category throughout the frontend, including filters, appointment form, treatment sections, vaccination sections, and homepage cards",
+      "acceptanceCriteria": [
+        "Backend animal category type includes a Birds/Poultry variant.",
+        "Services page filter includes 'Birds / Poultry' as a category filter option.",
+        "Appointment booking form includes 'Birds / Poultry' in the animal category dropdown.",
+        "Treatment Management page includes a 'Birds / Poultry' accordion section.",
+        "Vaccination page includes a 'Birds / Poultry' section.",
+        "Homepage animal category cards include a Birds / Poultry card alongside Pets, Large Ruminants, and Small Ruminants."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ServiceFilters.tsx",
+          "operation": "modify",
+          "description": "Add 'Birds / Poultry' as a selectable category filter option alongside Pets, Large Ruminants, and Small Ruminants. Map this to the backend ServiceCategory.birdsPoultry enum value."
+        },
+        {
+          "path": "frontend/src/components/AppointmentBookingForm.tsx",
+          "operation": "modify",
+          "description": "Add 'Birds / Poultry' to the animal category dropdown in the appointment booking form. Ensure it maps correctly to ServiceCategory.birdsPoultry when submitted to the backend."
+        },
+        {
+          "path": "frontend/src/pages/TreatmentManagementPage.tsx",
+          "operation": "modify",
+          "description": "Add a fourth TreatmentCategorySection for 'Birds / Poultry' treatments, filtering services by ServiceCategory.birdsPoultry. Display it alongside the existing Large Ruminants, Small Ruminants, and Pets sections."
+        },
+        {
+          "path": "frontend/src/pages/VaccinationPage.tsx",
+          "operation": "modify",
+          "description": "Add a 'Birds / Poultry' vaccination section that filters services by ServiceCategory.birdsPoultry. Display it alongside the existing category sections with a header, count badge, and VaccinationEntry components."
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Add a fourth animal category card for 'Birds / Poultry' alongside the existing Pets, Large Ruminants, and Small Ruminants cards. Wire the generated image frontend/public/assets/generated/animal-birds.dim_600x400.png to this card. Display the cards in the order: Pets, Large Animals, Small Animals, Birds/Poultry."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Surface new service types on Services page and appointment booking form: Post-Mortem & Poultry Diagnosis, Ration Formulation Consultation, and Animal Housing Planning",
+      "acceptanceCriteria": [
+        "A 'Post-Mortem & Poultry Diagnosis' service exists in the backend under the Birds/Poultry category with a note about 15+ hours/day availability.",
+        "A 'Ration Formulation Consultation' service exists in the backend under the Consultation type.",
+        "An 'Animal Housing Planning' service exists in the backend under the Consultation type.",
+        "All three services appear as cards on the Services page.",
+        "All three services are selectable in the appointment booking form's service dropdown."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/ServicesPage.tsx",
+          "operation": "modify",
+          "description": "Ensure the Services page grid displays all services fetched from the backend, including the newly seeded Post-Mortem & Poultry Diagnosis, Ration Formulation Consultation, and Animal Housing Planning services. No code changes may be needed if the page already lists all services dynamically; verify that the ServiceCard component renders these new entries correctly with their category and type badges."
+        },
+        {
+          "path": "frontend/src/components/AppointmentBookingForm.tsx",
+          "operation": "modify",
+          "description": "Verify that the service dropdown dynamically populates from the backend and includes the new Post-Mortem & Poultry Diagnosis, Ration Formulation Consultation, and Animal Housing Planning services. Ensure the dynamic filtering by selected animal category still works correctly for Birds/Poultry and other categories."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Update Navigation bar logo and brand name to 'treatVET' with subtitle 'Veterinary Care Treatment' and update browser tab title",
+      "acceptanceCriteria": [
+        "Navigation bar logo/brand text reads 'treatVET'.",
+        "Navigation bar shows 'Veterinary Care Treatment' as a subtitle or tagline.",
+        "Browser tab title is 'treatVET – Veterinary Care Treatment'."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Navigation.tsx",
+          "operation": "modify",
+          "description": "Update the logo/brand text to display 'treatVET' as the clinic name and add 'Veterinary Care Treatment' as a subtitle or tagline beneath or alongside the logo."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the <title> tag in the HTML head to 'treatVET – Veterinary Care Treatment' so the browser tab displays the correct clinic name and tagline."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Wire generated animal hero/banner images for homepage animal category cards in the correct order: Pets, Large Animals, Small Animals, Birds/Poultry",
+      "acceptanceCriteria": [
+        "Homepage animal category section shows four cards with distinct images for Pets, Large Animals, Small Animals, and Birds/Poultry in that order.",
+        "Images are loaded from frontend/public/assets/generated.",
+        "Each image is visually representative of its animal category."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Wire the generated animal hero images to the homepage animal category cards in this order: (1) Pets – frontend/public/assets/generated/animal-pets.dim_600x400.png, (2) Large Animals – frontend/public/assets/generated/animal-large.dim_600x400.png, (3) Small Animals – frontend/public/assets/generated/animal-small.dim_600x400.png, (4) Birds/Poultry – frontend/public/assets/generated/animal-birds.dim_600x400.png. Ensure each card displays the corresponding image as a static asset."
+        }
+      ]
+    }
+  ]
+}

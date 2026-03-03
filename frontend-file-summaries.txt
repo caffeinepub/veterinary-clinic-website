@@ -1,0 +1,22 @@
+{
+  "frontend/src/index.css": "Global styles with earthy green and warm neutral OKLCH color palette, Google Fonts import for Playfair Display and Inter, and utility classes for hero gradient and section dividers.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom serif/sans font families, additional border radius and box shadow tokens matching the nature-inspired design system.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including getAllServices, getServicesByCategory, getServicesByType, bookAppointment, updateAppointmentStatus, and cancelAppointment.",
+  "frontend/src/utils/appointmentHelpers.ts": "Utility functions for generating unique IDs, converting dates to ICP Time (bigint nanoseconds), formatting prices, and formatting dates.",
+  "frontend/src/components/Navigation.tsx": "Sticky responsive navigation bar updated with 'treatVET' brand name and 'Veterinary Care Treatment' subtitle, plus 24/7 availability indicator replacing the phone number.",
+  "frontend/src/components/Footer.tsx": "Footer updated with 'treatVET' branding, full Chittagong address, 24/7 availability note, standby specialist mention, and emergency house-visit callout badge.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper using TanStack Router's Outlet to render Navigation at top, page content in middle, and Footer at bottom.",
+  "frontend/src/components/ServiceCard.tsx": "Reusable service card displaying name, category badge, type badge, description, and formatted price; updated to include the Birds/Poultry category label and emerald color scheme in both lookup records.",
+  "frontend/src/components/ServiceFilters.tsx": "Filter controls updated to include 'Birds / Poultry' as a fourth category option alongside Pets, Large Animals, and Small Animals, mapped to ServiceCategory.birdsPoultry.",
+  "frontend/src/components/TreatmentCategorySection.tsx": "Accordion-based section component for a treatment category showing icon, title, subtitle, and expandable treatment panels with description and price.",
+  "frontend/src/components/VaccinationEntry.tsx": "Card component for a single vaccination service showing name, description, schedule note, and price with shield icon.",
+  "frontend/src/components/BookingConfirmation.tsx": "Success confirmation component shown after booking, displaying all appointment details and options to book another or return home.",
+  "frontend/src/components/AppointmentBookingForm.tsx": "Appointment booking form updated with 'Birds / Poultry' category option (layer, broiler, color bird) and localized placeholder text for the Chittagong context.",
+  "frontend/src/pages/HomePage.tsx": "Full homepage updated with treatVET branding, real stats (24/7, 4+ experts, 1700+ animals, 82% satisfaction, since 2017), four animal category cards with generated images (Pets/Large/Small/Birds), address, emergency house-visit callout, standby specialist mention, and specialized services section.",
+  "frontend/src/pages/ServicesPage.tsx": "Services listing page with search input, category/type filters, and a responsive card grid showing all backend services with loading skeletons.",
+  "frontend/src/pages/TreatmentManagementPage.tsx": "Treatment management page updated to include a fourth 'Birds / Poultry' accordion section alongside Pets, Large Animals, and Small Animals, using the birds image asset.",
+  "frontend/src/pages/VaccinationPage.tsx": "Vaccination page updated to include a fourth 'Birds / Poultry' vaccination section with emerald color scheme, alongside the existing three animal category sections.",
+  "frontend/src/pages/ContactBookingPage.tsx": "Contact and booking page updated with real treatVET address (Tulatali, Padua, Lohagara, Chittagong), 24/7 availability, standby specialist info, and emergency house-visit callout replacing the old placeholder contact details.",
+  "frontend/src/App.tsx": "Main app component setting up TanStack Router with routes for home, services, treatments, vaccination, and contact pages, all wrapped in the Layout component.",
+  "frontend/index.html": "HTML entry point with updated browser tab title set to 'treatVET – Veterinary Care Treatment'."
+}

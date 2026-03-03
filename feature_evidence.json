@@ -1,0 +1,130 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-homepage-hero-and-about-us-section-with-the-real-clinic-details-clinic-name-treatvet-veterinary-care-treatment-operating-24-7-4-veterinary-experts-1700-animals-treated-82-client-satisfaction-operating-since-2017-display-the-full-address-treatvet-tulatali-in-front-of-padua-high-school-padua-4397-lohagara-chittagong-highlight-the-emergency-house-visit-service-in-emergency-cases-we-visit-the-animal-owner-s-house-at-any-time-and-the-availability-of-a-standby-veterinary-specialist",
+      "featureTitle": "Update the homepage hero and About Us section with the real clinic details: clinic name 'treatVET (Veterinary Care Treatment)', operating 24/7, 4+ veterinary experts, 1700+ animals treated, 82% client satisfaction, operating since 2017. Display the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Highlight the emergency house-visit service ('In emergency cases, we visit the animal owner's house at any time') and the availability of a standby veterinary specialist.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-footer-component-to-display-the-real-clinic-contact-information-clinic-name-treatvet-full-address-tulatali-in-front-of-padua-high-school-padua-4397-lohagara-chittagong-24-7-availability-note-and-the-emergency-house-visit-highlight",
+      "featureTitle": "Update the Footer component to display the real clinic contact information: clinic name 'treatVET', full address (Tulatali, in front of Padua High School, Padua - 4397, Lohagara, Chittagong), 24/7 availability note, and the emergency house-visit highlight.",
+      "files": [
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-birds-poultry-as-a-fourth-animal-category-throughout-the-entire-application-sub-types-for-this-category-should-include-layer-broiler-and-color-bird-update-the-backend-animal-category-variant-to-include-a-birds-poultry-option-update-all-frontend-filter-controls-appointment-booking-form-dropdowns-service-cards-treatment-sections-and-vaccination-sections-to-include-birds-poultry-as-a-selectable-category",
+      "featureTitle": "Add 'Birds / Poultry' as a fourth animal category throughout the entire application. Sub-types for this category should include: Layer, Broiler, and Color Bird. Update the backend animal category variant to include a Birds/Poultry option. Update all frontend filter controls, appointment booking form dropdowns, service cards, treatment sections, and vaccination sections to include Birds / Poultry as a selectable category.",
+      "files": [
+        "frontend/src/components/AppointmentBookingForm.tsx",
+        "frontend/src/components/ServiceFilters.tsx",
+        "frontend/src/pages/HomePage.tsx",
+        "frontend/src/pages/TreatmentManagementPage.tsx",
+        "frontend/src/pages/VaccinationPage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-the-following-new-service-types-and-seed-entries-to-the-backend-and-surface-them-on-the-services-page-1-post-mortem-poultry-diagnosis-available-for-the-birds-poultry-category-available-more-than-15-hours-per-day-covering-layer-broiler-and-color-birds-2-ration-formulation-consultation-consultation-service-covering-all-animal-categories-for-feed-ration-planning-3-animal-housing-planning-consultation-service-covering-all-animal-categories-for-housing-design-and-planning-ensure-these-services-appear-in-the-services-page-grid-and-are-selectable-in-the-appointment-booking-form",
+      "featureTitle": "Add the following new service types and seed entries to the backend and surface them on the Services page: (1) Post-Mortem & Poultry Diagnosis — available for the Birds/Poultry category, available more than 15 hours per day, covering layer, broiler, and color birds; (2) Ration Formulation Consultation — consultation service covering all animal categories for feed/ration planning; (3) Animal Housing Planning — consultation service covering all animal categories for housing design and planning. Ensure these services appear in the Services page grid and are selectable in the appointment booking form.",
+      "files": [
+        "frontend/src/components/AppointmentBookingForm.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-navigation-bar-logo-and-brand-name-to-display-treatvet-with-the-subtitle-veterinary-care-treatment-update-the-browser-tab-title-index-html-or-equivalent-to-treatvet-veterinary-care-treatment",
+      "featureTitle": "Update the Navigation bar logo and brand name to display 'treatVET' with the subtitle 'Veterinary Care Treatment'. Update the browser tab title (index.html or equivalent) to 'treatVET – Veterinary Care Treatment'.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/Navigation.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-generate-and-display-a-series-of-four-animal-hero-banner-images-for-the-homepage-animal-category-cards-in-this-order-1-pets-dogs-cats-2-large-animals-cattle-buffalo-camel-3-small-animals-sheep-goats-4-birds-poultry-layer-hens-broiler-chickens-color-birds-render-them-as-static-assets-from-frontend-public-assets-generated",
+      "featureTitle": "Generate and display a series of four animal hero/banner images for the homepage animal category cards in this order: (1) Pets (dogs, cats), (2) Large Animals (cattle, buffalo, camel), (3) Small Animals (sheep, goats), (4) Birds/Poultry (layer hens, broiler chickens, color birds). Render them as static assets from frontend/public/assets/generated.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "authorization@4.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Veterinary clinic website for treatVET (Veterinary Care Treatment), a 24/7 clinic operating since 2017 with 4+ veterinary experts, 1700+ animals treated, and 82% client satisfaction. Services cover pets, large animals, small animals, and birds (poultry included). Located in Tulatali, Padua, Lohagara, Chittagong. Offers emergency house visits, standby specialist, post-mortem and poultry diagnosis, vaccinations, ration formulation, and animal housing planning.",
+  "architectural_notes": [
+    "Four animal categories: Pets, Large Animals, Small Animals, Birds/Poultry (layer, broiler, color bird)",
+    "Clinic operates 24/7 with emergency home visit capability and standby specialist"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Warm photo-realistic illustration of pets — a dog and a cat together in a clinic setting with earthy green tones (animal-pets.dim_600x400.png)\n- Warm photo-realistic illustration of large farm animals — cattle, buffalo, and camel in a rural field with earthy warm tones (animal-large.dim_600x400.png)\n- Warm photo-realistic illustration of small ruminants — sheep and goats in a pastoral setting with soft warm tones (animal-small.dim_600x400.png)\n- Warm photo-realistic illustration of poultry birds — layer hens, broiler chickens, and colorful birds in a farm setting with warm earthy tones (animal-birds.dim_600x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-visually-engaging-homepage-with-a-hero-section-showcasing-the-clinic-name-tagline-and-a-call-to-action-button-include-a-services-summary-section-with-icons-cards-for-the-three-main-animal-categories-large-ruminants-small-ruminants-pets-a-brief-about-us-section-and-a-quick-access-navigation-bar-with-links-to-all-major-sections",
+      "title": "Create a visually engaging homepage with a hero section showcasing the clinic name, tagline, and a call-to-action button. Include a services summary section with icons/cards for the three main animal categories (Large Ruminants, Small Ruminants, Pets), a brief 'About Us' section, and a quick-access navigation bar with links to all major sections.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-page-that-lists-all-available-clinic-services-in-a-filterable-card-based-grid-layout-include-filter-controls-by-animal-category-large-ruminants-small-ruminants-pets-and-by-service-type-treatment-vaccination-consultation-surgery-other-each-service-card-should-display-the-service-name-description-category-badge-type-badge-and-price",
+      "title": "Create a Services page that lists all available clinic services in a filterable, card-based grid layout. Include filter controls by animal category (Large Ruminants, Small Ruminants, Pets) and by service type (Treatment, Vaccination, Consultation, Surgery, Other). Each service card should display the service name, description, category badge, type badge, and price.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-treatment-management-section-page-that-displays-all-treatment-services-organized-by-animal-category-include-expandable-detail-panels-for-each-treatment-showing-description-recommended-frequency-and-price-add-a-section-for-large-ruminants-cattle-buffalo-camels-small-ruminants-sheep-goats-and-pets-dogs-cats-birds",
+      "title": "Build a Treatment Management section/page that displays all treatment services organized by animal category. Include expandable detail panels for each treatment showing description, recommended frequency, and price. Add a section for Large Ruminants (cattle, buffalo, camels), Small Ruminants (sheep, goats), and Pets (dogs, cats, birds).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-vaccination-services-page-listing-all-vaccination-programs-available-organized-by-animal-category-large-ruminants-small-ruminants-pets-each-vaccination-entry-should-display-the-vaccine-name-target-disease-condition-recommended-schedule-animal-category-and-price",
+      "title": "Build a Vaccination Services page listing all vaccination programs available, organized by animal category (Large Ruminants, Small Ruminants, Pets). Each vaccination entry should display the vaccine name, target disease/condition, recommended schedule, animal category, and price.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-appointment-booking-page-with-a-form-allowing-visitors-to-book-an-appointment-the-form-must-collect-client-name-phone-number-animal-type-and-category-desired-service-populated-from-available-services-preferred-date-and-an-optional-notes-field-on-submission-save-the-appointment-to-the-backend-and-display-a-confirmation-message",
+      "title": "Create a Contact & Appointment Booking page with a form allowing visitors to book an appointment. The form must collect: client name, phone number, animal type and category, desired service (populated from available services), preferred date, and an optional notes field. On submission, save the appointment to the backend and display a confirmation message.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-warm-nature-inspired-visual-theme-across-the-entire-website-using-earthy-greens-and-warm-neutrals-tans-creams-soft-browns-use-clean-professional-typography-with-a-friendly-feel-consistent-layout-with-a-sticky-top-navigation-bar-footer-with-clinic-info-and-responsive-design-for-mobile-and-desktop-apply-the-theme-to-all-pages-cohesively",
+      "title": "Apply a warm, nature-inspired visual theme across the entire website using earthy greens and warm neutrals (tans, creams, soft browns). Use clean, professional typography with a friendly feel. Consistent layout with a sticky top navigation bar, footer with clinic info, and responsive design for mobile and desktop. Apply the theme to all pages cohesively.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-homepage-hero-and-about-us-section-with-the-real-clinic-details-clinic-name-treatvet-veterinary-care-treatment-operating-24-7-4-veterinary-experts-1700-animals-treated-82-client-satisfaction-operating-since-2017-display-the-full-address-treatvet-tulatali-in-front-of-padua-high-school-padua-4397-lohagara-chittagong-highlight-the-emergency-house-visit-service-in-emergency-cases-we-visit-the-animal-owner-s-house-at-any-time-and-the-availability-of-a-standby-veterinary-specialist",
+      "title": "Update the homepage hero and About Us section with the real clinic details: clinic name 'treatVET (Veterinary Care Treatment)', operating 24/7, 4+ veterinary experts, 1700+ animals treated, 82% client satisfaction, operating since 2017. Display the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Highlight the emergency house-visit service ('In emergency cases, we visit the animal owner's house at any time') and the availability of a standby veterinary specialist.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-component-to-display-the-real-clinic-contact-information-clinic-name-treatvet-full-address-tulatali-in-front-of-padua-high-school-padua-4397-lohagara-chittagong-24-7-availability-note-and-the-emergency-house-visit-highlight",
+      "title": "Update the Footer component to display the real clinic contact information: clinic name 'treatVET', full address (Tulatali, in front of Padua High School, Padua - 4397, Lohagara, Chittagong), 24/7 availability note, and the emergency house-visit highlight.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-birds-poultry-as-a-fourth-animal-category-throughout-the-entire-application-sub-types-for-this-category-should-include-layer-broiler-and-color-bird-update-the-backend-animal-category-variant-to-include-a-birds-poultry-option-update-all-frontend-filter-controls-appointment-booking-form-dropdowns-service-cards-treatment-sections-and-vaccination-sections-to-include-birds-poultry-as-a-selectable-category",
+      "title": "Add 'Birds / Poultry' as a fourth animal category throughout the entire application. Sub-types for this category should include: Layer, Broiler, and Color Bird. Update the backend animal category variant to include a Birds/Poultry option. Update all frontend filter controls, appointment booking form dropdowns, service cards, treatment sections, and vaccination sections to include Birds / Poultry as a selectable category.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-following-new-service-types-and-seed-entries-to-the-backend-and-surface-them-on-the-services-page-1-post-mortem-poultry-diagnosis-available-for-the-birds-poultry-category-available-more-than-15-hours-per-day-covering-layer-broiler-and-color-birds-2-ration-formulation-consultation-consultation-service-covering-all-animal-categories-for-feed-ration-planning-3-animal-housing-planning-consultation-service-covering-all-animal-categories-for-housing-design-and-planning-ensure-these-services-appear-in-the-services-page-grid-and-are-selectable-in-the-appointment-booking-form",
+      "title": "Add the following new service types and seed entries to the backend and surface them on the Services page: (1) Post-Mortem & Poultry Diagnosis — available for the Birds/Poultry category, available more than 15 hours per day, covering layer, broiler, and color birds; (2) Ration Formulation Consultation — consultation service covering all animal categories for feed/ration planning; (3) Animal Housing Planning — consultation service covering all animal categories for housing design and planning. Ensure these services appear in the Services page grid and are selectable in the appointment booking form.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-navigation-bar-logo-and-brand-name-to-display-treatvet-with-the-subtitle-veterinary-care-treatment-update-the-browser-tab-title-index-html-or-equivalent-to-treatvet-veterinary-care-treatment",
+      "title": "Update the Navigation bar logo and brand name to display 'treatVET' with the subtitle 'Veterinary Care Treatment'. Update the browser tab title (index.html or equivalent) to 'treatVET – Veterinary Care Treatment'.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-display-a-series-of-four-animal-hero-banner-images-for-the-homepage-animal-category-cards-in-this-order-1-pets-dogs-cats-2-large-animals-cattle-buffalo-camel-3-small-animals-sheep-goats-4-birds-poultry-layer-hens-broiler-chickens-color-birds-render-them-as-static-assets-from-frontend-public-assets-generated",
+      "title": "Generate and display a series of four animal hero/banner images for the homepage animal category cards in this order: (1) Pets (dogs, cats), (2) Large Animals (cattle, buffalo, camel), (3) Small Animals (sheep, goats), (4) Birds/Poultry (layer hens, broiler chickens, color birds). Render them as static assets from frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with clinic overview and services summary",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Treatment management section for large ruminants, small ruminants, and pets",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Vaccination services page covering all animal categories",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Services listing page covering all clinic offerings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Contact and appointment booking section",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Build a backend data model and API for services. Each service record must include: service name, description, animal category (Large Ruminant, Small Ruminant, Pet), service type (Treatment, Vaccination, Consultation, Surgery, Other), and price. Expose CRUD operations: createService, getServices, getServicesByCategory, getServicesByType, updateService, deleteService.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Build a backend data model and API for appointment booking. An appointment record must include: client name, contact phone number, animal type, animal category (Large Ruminant, Small Ruminant, Pet), requested service, preferred date, and status (Pending, Confirmed, Completed, Cancelled). Expose operations: bookAppointment, getAppointments, updateAppointmentStatus, cancelAppointment.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update homepage hero and about section with real clinic info: name 'treatVET', stats (24/7, 4+ experts, 1700+ animals treated, 82% satisfaction, since 2017), address, and emergency house visit highlight.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Add Birds/Poultry as a fourth animal category (layer, broiler, color bird) alongside Pets, Large Animals, and Small Animals. Update all relevant pages and filters.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add additional services: post-mortem and poultry diagnosis (15+ hours/day), ration formulation, and animal housing planning as distinct service types.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Veterinary Clinic Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

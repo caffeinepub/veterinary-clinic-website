@@ -1,0 +1,154 @@
+{
+  "kind": "build_request",
+  "title": "Update clinic branding, real content, Birds category, and additional services",
+  "projectName": "treatVET",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Update the homepage hero and About Us section with the real clinic details: clinic name 'treatVET (Veterinary Care Treatment)', operating 24/7, 4+ veterinary experts, 1700+ animals treated, 82% client satisfaction, operating since 2017. Display the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Highlight the emergency house-visit service ('In emergency cases, we visit the animal owner's house at any time') and the availability of a standby veterinary specialist.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Name : treatVET ( Veterinary care treatment)",
+          "24/7",
+          "Veterinary expert: 4+",
+          "Animal treated: 1700+",
+          "82% of known client satisfaction",
+          "Since 2017",
+          "Address: treatVET , Tulatali ( in front of padua high School), Padua - 4397, Lohagara, Chittagong",
+          "In emergency case visit to Animal owner house at any time",
+          "Standby veterinary specialist."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage hero displays 'treatVET' as the clinic name and 'Veterinary Care Treatment' as the tagline or subtitle.",
+        "Stat counters/badges show: 24/7, 4+ Experts, 1700+ Animals Treated, 82% Satisfaction, Since 2017.",
+        "About Us / contact section displays the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong.",
+        "A highlighted callout or badge communicates the 24/7 emergency house-visit service.",
+        "Standby veterinary specialist availability is mentioned on the homepage."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the Footer component to display the real clinic contact information: clinic name 'treatVET', full address (Tulatali, in front of Padua High School, Padua - 4397, Lohagara, Chittagong), 24/7 availability note, and the emergency house-visit highlight.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Address: treatVET , Tulatali ( in front of padua high School), Padua - 4397, Lohagara, Chittagong",
+          "In emergency case visit to Animal owner house at any time"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer shows clinic name 'treatVET' and full address.",
+        "Footer shows 24/7 availability note.",
+        "Footer references emergency house-visit service."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Add 'Birds / Poultry' as a fourth animal category throughout the entire application. Sub-types for this category should include: Layer, Broiler, and Color Bird. Update the backend animal category variant to include a Birds/Poultry option. Update all frontend filter controls, appointment booking form dropdowns, service cards, treatment sections, and vaccination sections to include Birds / Poultry as a selectable category.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Animal picture serial : 1. Pet  2. Large animals  3. Small animals  4. Birds",
+          "POst mortem and diagnosis of poultry (layer, broiler, color bird)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend animal category type includes a Birds/Poultry variant.",
+        "Services page filter includes 'Birds / Poultry' as a category filter option.",
+        "Appointment booking form includes 'Birds / Poultry' in the animal category dropdown.",
+        "Treatment Management page includes a 'Birds / Poultry' accordion section.",
+        "Vaccination page includes a 'Birds / Poultry' section.",
+        "Homepage animal category cards include a Birds / Poultry card alongside Pets, Large Ruminants, and Small Ruminants."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Add the following new service types and seed entries to the backend and surface them on the Services page: (1) Post-Mortem & Poultry Diagnosis — available for the Birds/Poultry category, available more than 15 hours per day, covering layer, broiler, and color birds; (2) Ration Formulation Consultation — consultation service covering all animal categories for feed/ration planning; (3) Animal Housing Planning — consultation service covering all animal categories for housing design and planning. Ensure these services appear in the Services page grid and are selectable in the appointment booking form.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "More than 15 hours a day POst mortem and diagnosis of poultry (layer, broiler, color bird)",
+          "Consult ration formulation and animal housing planning"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A 'Post-Mortem & Poultry Diagnosis' service exists in the backend under the Birds/Poultry category with a note about 15+ hours/day availability.",
+        "A 'Ration Formulation Consultation' service exists in the backend under the Consultation type.",
+        "An 'Animal Housing Planning' service exists in the backend under the Consultation type.",
+        "All three services appear as cards on the Services page.",
+        "All three services are selectable in the appointment booking form's service dropdown."
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Update the Navigation bar logo and brand name to display 'treatVET' with the subtitle 'Veterinary Care Treatment'. Update the browser tab title (index.html or equivalent) to 'treatVET – Veterinary Care Treatment'.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Name : treatVET ( Veterinary care treatment)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar logo/brand text reads 'treatVET'.",
+        "Navigation bar shows 'Veterinary Care Treatment' as a subtitle or tagline.",
+        "Browser tab title is 'treatVET – Veterinary Care Treatment'."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Generate and display a series of four animal hero/banner images for the homepage animal category cards in this order: (1) Pets (dogs, cats), (2) Large Animals (cattle, buffalo, camel), (3) Small Animals (sheep, goats), (4) Birds/Poultry (layer hens, broiler chickens, color birds). Render them as static assets from frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Animal picture serial : 1. Pet  2. Large animals  3. Small animals  4. Birds"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Homepage animal category section shows four cards with distinct images for Pets, Large Animals, Small Animals, and Birds/Poultry in that order.",
+        "Images are loaded from frontend/public/assets/generated.",
+        "Each image is visually representative of its animal category."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "All Motoko logic must remain in the single backend/main.mo actor file.",
+    "Preserve all existing routes and page structure; only extend or update content."
+  ],
+  "nonGoals": [
+    "Adding a new separate Poultry/Birds dedicated page — the existing pages should be extended with the new category.",
+    "Implementing real-time notifications or SMS for emergency alerts.",
+    "Adding a payment or billing system.",
+    "Multi-language support."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Warm photo-realistic illustration of pets — a dog and a cat together in a clinic setting with earthy green tones (animal-pets.dim_600x400.png)",
+      "Warm photo-realistic illustration of large farm animals — cattle, buffalo, and camel in a rural field with earthy warm tones (animal-large.dim_600x400.png)",
+      "Warm photo-realistic illustration of small ruminants — sheep and goats in a pastoral setting with soft warm tones (animal-small.dim_600x400.png)",
+      "Warm photo-realistic illustration of poultry birds — layer hens, broiler chickens, and colorful birds in a farm setting with warm earthy tones (animal-birds.dim_600x400.png)"
+    ],
+    "edits": []
+  }
+}

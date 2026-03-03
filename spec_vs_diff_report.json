@@ -1,0 +1,58 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-03T03:58:46.640Z",
+  "summary": "The diff implements most of the requested requirements well. REQ-9, REQ-10, REQ-11, REQ-13, and REQ-14 are all substantially addressed. However, the backend seed entries for the three new services (Post-Mortem & Poultry Diagnosis, Ration Formulation Consultation, Animal Housing Planning) are not visible in the truncated backend/main.mo diff. Additionally, files under frontend/src/hooks/ were modified and a separate backend/migration.mo was added, both violating stated constraints.",
+  "missing_requirements": [
+    {
+      "id": "REQ-12",
+      "requirement": "Seed entries for 'Post-Mortem & Poultry Diagnosis', 'Ration Formulation Consultation', and 'Animal Housing Planning' must exist in the backend.",
+      "reason": "The backend/main.mo diff is truncated and does not show any seed/init calls that add these three services to the backend store. The ServiceCategory and ServiceType types include the necessary variants, but no evidence of the actual service records being seeded is present in the visible portion of the diff.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Modification of frontend/src/hooks/useActor.ts",
+      "reason": "The build constraints explicitly state 'Do not modify files under frontend/src/hooks/'. The diff shows frontend/src/hooks/useActor.ts was modified, including a new import of 'getSecretParameter' from urlParams.",
+      "evidence": [
+        "frontend/src/hooks/useActor.ts"
+      ]
+    },
+    {
+      "description": "Addition of backend/migration.mo as a separate migration module file",
+      "reason": "The build constraints state 'All Motoko logic must remain in the single backend/main.mo actor file.' A separate backend/migration.mo module was added, violating this constraint.",
+      "evidence": [
+        "backend/migration.mo"
+      ]
+    },
+    {
+      "description": "Addition of frontend/src/utils/urlParams.ts utility file",
+      "reason": "No requirement requested a URL parameter utility module. This file was added as a new utility with functions for URL parameter extraction and session storage management, which was not part of any stated requirement.",
+      "evidence": [
+        "frontend/src/utils/urlParams.ts"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "backend/main.mo",
+    "backend/migration.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/components/AppointmentBookingForm.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/ServiceCard.tsx",
+    "frontend/src/components/ServiceFilters.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/pages/ContactBookingPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/TreatmentManagementPage.tsx",
+    "frontend/src/pages/VaccinationPage.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "project_state.json"
+  ]
+}

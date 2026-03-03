@@ -1,0 +1,128 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-03-03T03:58:46.644Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 6,
+    "implemented": 6,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Update the Footer component to display the real clinic contact information: clinic name 'treatVET', full address (Tulatali, in front of Padua High School, Padua - 4397, Lohagara, Chittagong), 24/7 availability note, and the emergency house-visit highlight.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Add 'Birds / Poultry' as a fourth animal category throughout the entire application. Sub-types for this category should include: Layer, Broiler, and Color Bird. Update the backend animal category variant to include a Birds/Poultry option. Update all frontend filter controls, appointment booking form dropdowns, service cards, treatment sections, and vaccination sections to include Birds / Poultry as a selectable category.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ServiceFilters.tsx",
+          "frontend/src/components/AppointmentBookingForm.tsx",
+          "frontend/src/pages/TreatmentManagementPage.tsx",
+          "frontend/src/pages/VaccinationPage.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ServiceFilters.tsx",
+          "frontend/src/components/AppointmentBookingForm.tsx",
+          "frontend/src/pages/TreatmentManagementPage.tsx",
+          "frontend/src/pages/VaccinationPage.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Add the following new service types and seed entries to the backend and surface them on the Services page: (1) Post-Mortem & Poultry Diagnosis — available for the Birds/Poultry category, available more than 15 hours per day, covering layer, broiler, and color birds; (2) Ration Formulation Consultation — consultation service covering all animal categories for feed/ration planning; (3) Animal Housing Planning — consultation service covering all animal categories for housing design and planning. Ensure these services appear in the Services page grid and are selectable in the appointment booking form.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/ServicesPage.tsx",
+          "frontend/src/components/AppointmentBookingForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/AppointmentBookingForm.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Update the Navigation bar logo and brand name to display 'treatVET' with the subtitle 'Veterinary Care Treatment'. Update the browser tab title (index.html or equivalent) to 'treatVET – Veterinary Care Treatment'.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Generate and display a series of four animal hero/banner images for the homepage animal category cards in this order: (1) Pets (dogs, cats), (2) Large Animals (cattle, buffalo, camel), (3) Small Animals (sheep, goats), (4) Birds/Poultry (layer hens, broiler chickens, color birds). Render them as static assets from frontend/public/assets/generated.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Update the homepage hero and About Us section with the real clinic details: clinic name 'treatVET (Veterinary Care Treatment)', operating 24/7, 4+ veterinary experts, 1700+ animals treated, 82% client satisfaction, operating since 2017. Display the full address: treatVET, Tulatali (in front of Padua High School), Padua - 4397, Lohagara, Chittagong. Highlight the emergency house-visit service ('In emergency cases, we visit the animal owner's house at any time') and the availability of a standby veterinary specialist.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/authorization/MixinAuthorization.mo",
+    "backend/authorization/access-control.mo",
+    "backend/main.mo",
+    "backend/migration.mo",
+    "build-request.json",
+    "build-template/README.md",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/public/assets/generated/animal-birds.dim_600x400.png",
+    "frontend/public/assets/generated/animal-large.dim_600x400.png",
+    "frontend/public/assets/generated/animal-pets.dim_600x400.png",
+    "frontend/public/assets/generated/animal-small.dim_600x400.png",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/AppointmentBookingForm.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/ServiceCard.tsx",
+    "frontend/src/components/ServiceFilters.tsx",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/pages/ContactBookingPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/TreatmentManagementPage.tsx",
+    "frontend/src/pages/VaccinationPage.tsx",
+    "frontend/src/utils/urlParams.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
