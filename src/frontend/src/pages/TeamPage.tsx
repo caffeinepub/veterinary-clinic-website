@@ -1,4 +1,5 @@
 import {
+  BadgeDollarSign,
   FlaskConical,
   Leaf,
   Shield,
@@ -90,6 +91,16 @@ const teamSections: TeamSection[] = [
     ],
   },
   {
+    id: "coordinator-accounts-finance",
+    title: "Coordinator Accounts & Finance",
+    icon: BadgeDollarSign,
+    color: "border-teal-200",
+    headerBg: "bg-teal-600",
+    badgeBg: "bg-teal-50",
+    badgeText: "text-teal-800",
+    members: [{ name: "Mr. Chala Thoai Chak" }],
+  },
+  {
     id: "supporting",
     title: "Supporting Companion",
     icon: Users,
@@ -130,6 +141,7 @@ const ocidMap: Record<string, string> = {
   veterinarian: "team.veterinarian.section",
   homoeopathy: "team.homoeopathy.section",
   research: "team.research.section",
+  "coordinator-accounts-finance": "team.coordinator_accounts_finance.section",
   supporting: "team.supporting.section",
   vaccinator: "team.vaccinator.section",
 };
